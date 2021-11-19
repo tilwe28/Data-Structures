@@ -1,0 +1,566 @@
+name,county,type
+Woodland Township,Burlington,Township
+Hopewell Township,Cumberland,Township
+Rocky Hill,Somerset,Borough
+Newark,Essex,City
+Pine Hill,Camden,Borough
+Fair Haven,Monmouth,Borough
+Springfield Township,Burlington,Township
+Mountain Lakes,Morris,Borough
+Metuchen,Middlesex,Borough
+Bloomfield,Essex,Township
+Palisades Park,Bergen,Borough
+High Bridge,Hunterdon,Borough
+Lavallette,Ocean,Borough
+Neptune City,Monmouth,Borough
+Upper Pittsgrove,Salem,Township
+Hammonton,Atlantic,Town
+Denville,Morris,Township
+Avalon,Cape May,Borough
+Hillside,Union,Township
+Glen Ridge,Essex,Borough
+Morris Township,Morris,Township
+Woodbury Heights,Gloucester,Borough
+Mount Ephraim,Camden,Borough
+Ocean Township,Monmouth,Township
+Westampton,Burlington,Township
+Edgewater Park,Burlington,Township
+Buena,Atlantic,Borough
+Lyndhurst,Bergen,Township
+Southampton,Burlington,Township
+Carneys Point,Salem,Township
+Montgomery,Somerset,Township
+South Orange Village,Essex,Township[4]
+Plumsted,Ocean,Township
+Teaneck,Bergen,Township
+Liberty Township,Warren,Township
+Milford,Hunterdon,Borough
+Freehold Borough,Monmouth,Borough
+Highland Park,Middlesex,Borough
+Hillsdale,Bergen,Borough
+Corbin City,Atlantic,City
+Newton,Sussex,Town
+Hopewell Township,Mercer,Township
+Frankford Township,Sussex,Township
+Greenwich Township,Cumberland,Township
+Mannington,Salem,Township
+Long Beach,Ocean,Township
+Pompton Lakes,Passaic,Borough
+Allendale,Bergen,Borough
+Bridgeton,Cumberland,City
+Ventnor City,Atlantic,City
+West Windsor,Mercer,Township
+South Toms River,Ocean,Borough
+Totowa,Passaic,Borough
+Barnegat,Ocean,Township
+Jamesburg,Middlesex,Borough
+Princeton[note 1],Mercer,Borough
+Peapack-Gladstone,Somerset,Borough
+Berlin Township,Camden,Township
+Englewood Cliffs,Bergen,Borough
+Montclair,Essex,Township
+Winfield,Union,Township
+Carlstadt,Bergen,Borough
+Plainfield,Union,City
+Mount Laurel,Burlington,Township
+Ho-Ho-Kus,Bergen,Borough
+Allenhurst,Monmouth,Borough
+Englewood,Bergen,City
+Vineland,Cumberland,City
+Pemberton,Burlington,Borough
+Surf City,Ocean,Borough
+Brooklawn,Camden,Borough
+Winslow,Camden,Township
+Woolwich Township,Gloucester,Township
+Wharton,Morris,Borough
+Green Brook,Somerset,Township
+Rumson,Monmouth,Borough
+Stratford,Camden,Borough
+Teterboro,Bergen,Borough
+Fieldsboro,Burlington,Borough
+Cranford,Union,Township
+Chesterfield,Burlington,Township
+Palmyra,Burlington,Borough
+Pohatcong Township,Warren,Township
+Point Pleasant,Ocean,Borough
+Alpine,Bergen,Borough
+Millstone Township,Monmouth,Township
+Wanaque,Passaic,Borough
+Ocean Gate,Ocean,Borough
+Clark,Union,Township
+Randolph,Morris,Township
+Bedminster,Somerset,Township
+Harvey Cedars,Ocean,Borough
+South Harrison,Gloucester,Township
+North Brunswick,Middlesex,Township
+Manalapan,Monmouth,Township
+Harrington Park,Bergen,Borough
+Mahwah,Bergen,Township
+Bay Head,Ocean,Borough
+Moonachie,Bergen,Borough
+Franklin Lakes,Bergen,Borough
+Chatham Township,Morris,Township
+Hawthorne,Passaic,Borough
+Mansfield Township,Burlington,Township
+Ship Bottom,Ocean,Borough
+Chatham Borough,Morris,Borough
+Madison,Morris,Borough
+Haddonfield,Camden,Borough
+Roosevelt,Monmouth,Borough
+Garfield,Bergen,City
+Park Ridge,Bergen,Borough
+Belmar,Monmouth,Borough
+Byram,Sussex,Township
+Oakland,Bergen,Borough
+Pine Beach,Ocean,Borough
+South Amboy,Middlesex,City
+Washington Township,Bergen,Township
+Passaic,Passaic,City
+Beverly,Burlington,City
+Union Township,Hunterdon,Township
+Butler,Morris,Borough
+Cinnaminson,Burlington,Township
+Mount Holly,Burlington,Township
+Upper Deerfield,Cumberland,Township
+Plainsboro,Middlesex,Township
+North Caldwell,Essex,Borough
+Sea Bright,Monmouth,Borough
+Edgewater,Bergen,Borough
+Far Hills,Somerset,Borough
+Elizabeth,Union,City
+Riverton,Burlington,Borough
+Paulsboro,Gloucester,Borough
+Washington,Warren,Borough
+National Park,Gloucester,Borough
+Long Hill,Morris,Township
+Mantua,Gloucester,Township
+Dennis Township,Cape May,Township
+Hamilton,Mercer,Township
+Dunellen,Middlesex,Borough
+Delran,Burlington,Township
+Roxbury,Morris,Township
+Colts Neck,Monmouth,Township
+Union City,Hudson,City
+Ewing,Mercer,Township
+Lafayette,Sussex,Township
+Upper Township,Cape May,Township
+Nutley,Essex,Township
+Aberdeen,Monmouth,Township
+Rochelle Park,Bergen,Township
+South River,Middlesex,Borough
+Washington Township,Gloucester,Township
+Tabernacle,Burlington,Township
+Ogdensburg,Sussex,Borough
+Robbinsville,Mercer,Township
+Pittsgrove,Salem,Township
+Eatontown,Monmouth,Borough
+Medford,Burlington,Township
+Berkeley Heights,Union,Township
+Audubon,Camden,Borough
+Wallington,Bergen,Borough
+Irvington,Essex,Township
+Clayton,Gloucester,Borough
+Shrewsbury Township,Monmouth,Township
+Paterson,Passaic,City
+Blairstown,Warren,Township
+Hi-Nella,Camden,Borough
+Seaside Park,Ocean,Borough
+Fairfield,Essex,Township
+Eagleswood,Ocean,Township
+Elmer,Salem,Borough
+Frenchtown,Hunterdon,Borough
+Pennsville,Salem,Township
+Deal,Monmouth,Borough
+North Wildwood,Cape May,City
+Matawan,Monmouth,Borough
+Kingwood,Hunterdon,Township
+Rockleigh,Bergen,Borough
+Wenonah,Gloucester,Borough
+Hasbrouck Heights,Bergen,Borough
+East Newark,Hudson,Borough
+Rockaway,Morris,Borough
+Pleasantville,Atlantic,City
+Hillsborough,Somerset,Township
+Westwood,Bergen,Borough
+Marlboro,Monmouth,Township
+Florham Park,Morris,Borough
+Rutherford,Bergen,Borough
+Brigantine,Atlantic,City
+Allamuchy,Warren,Township
+Caldwell,Essex,Borough
+Shrewsbury,Monmouth,Borough
+Union,Union,Township
+East Greenwich,Gloucester,Township
+Victory Gardens,Morris,Borough
+Woodcliff Lake,Bergen,Borough
+Oaklyn,Camden,Borough
+Hazlet,Monmouth,Township
+West Wildwood,Cape May,Borough
+Cape May Point,Cape May,Borough
+Hampton,Hunterdon,Borough
+Hightstown,Mercer,Borough
+Burlington Township,Burlington,Township
+Willingboro,Burlington,Township
+Elsinboro Township,Salem,Township
+Lower Alloways Creek,Salem,Township
+Spotswood,Middlesex,Borough
+Stone Harbor,Cape May,Borough
+Mantoloking,Ocean,Borough
+Delanco,Burlington,Township
+Swedesboro,Gloucester,Borough
+Little Silver,Monmouth,Borough
+Hampton Township,Sussex,Township
+Burlington,Burlington,City
+Chester Borough,Morris,Borough
+Pennington,Mercer,Borough
+Upper Saddle River,Bergen,Borough
+Woodbridge,Middlesex,Township
+Bloomingdale,Passaic,Borough
+Glen Gardner,Hunterdon,Borough
+Lincoln Park,Morris,Borough
+Cranbury,Middlesex,Township
+Chesilhurst,Camden,Borough
+Linden,Union,City
+Saddle River,Bergen,Borough
+Branchburg,Somerset,Township
+Phillipsburg,Warren,Town
+East Orange,Essex,City
+Port Republic,Atlantic,City
+Manchester,Ocean,Township
+Red Bank,Monmouth,Borough
+Stanhope,Sussex,Borough
+Medford Lakes,Burlington,Borough
+Eastampton,Burlington,Township
+Independence Township,Warren,Township
+Freehold Township,Monmouth,Township
+Island Heights,Ocean,Borough
+Bound Brook,Somerset,Borough
+Somerville,Somerset,Borough
+Gloucester Township,Camden,Township
+Haddon Heights,Camden,Borough
+Wrightstown,Burlington,Borough
+Pequannock,Morris,Township
+Somerdale,Camden,Borough
+Evesham,Burlington,Township
+East Hanover,Morris,Township
+Guttenberg,Hudson,Town
+Maple Shade,Burlington,Township
+Ringwood,Passaic,Borough
+Wayne,Passaic,Township
+Pilesgrove,Salem,Township
+Franklin,Somerset,Township
+Deptford,Gloucester,Township
+Alexandria Township,Hunterdon,Township
+Sea Girt,Monmouth,Borough
+Riverdale,Morris,Borough
+Newfield,Gloucester,Borough
+Clementon,Camden,Borough
+South Hackensack,Bergen,Township
+Mendham Borough,Morris,Borough
+Interlaken,Monmouth,Borough
+Sandyston Township,Sussex,Township
+Salem,Salem,City
+Alloway Township,Salem,Township
+Hopewell,Mercer,Borough
+North Hanover,Burlington,Township
+Bordentown Township,Burlington,Township
+Oradell,Bergen,Borough
+White Township,Warren,Township
+New Brunswick,Middlesex,City
+Hackettstown,Warren,Town
+Camden,Camden,City
+Haworth,Bergen,Borough
+Pennsauken,Camden,Township
+Hardyston,Sussex,Township
+Glen Rock,Bergen,Borough
+River Edge,Bergen,Borough
+Little Egg Harbor,Ocean,Township
+Monmouth Beach,Monmouth,Borough
+Spring Lake,Monmouth,Borough
+Woodland Park,Passaic,Borough
+Brielle,Monmouth,Borough
+Brick,Ocean,Township
+Montvale,Bergen,Borough
+West New York,Hudson,Town
+East Rutherford,Bergen,Borough
+Fort Lee,Bergen,Borough
+Trenton,Mercer,City
+Oldmans Township,Salem,Township
+Livingston,Essex,Township
+Clinton Township,Hunterdon,Township
+East Windsor,Mercer,Township
+Harrison Township,Gloucester,Township
+Jersey City,Hudson,City
+Flemington,Hunterdon,Borough
+Woodstown,Salem,Borough
+Wildwood,Cape May,City
+Cresskill,Bergen,Borough
+Parsippany,Morris,Township
+Tenafly,Bergen,Borough
+Leonia,Bergen,Borough
+Gloucester City,Camden,City
+Watchung,Somerset,Borough
+Egg Harbor,Atlantic,Township
+Califon,Hunterdon,Borough
+Quinton Township,Salem,Township
+Demarest,Bergen,Borough
+Mountainside,Union,Borough
+Englishtown,Monmouth,Borough
+Harmony Township,Warren,Township
+Keansburg,Monmouth,Borough
+Perth Amboy,Middlesex,City
+Kinnelon,Morris,Borough
+Hainesport,Burlington,Township
+Warren,Somerset,Township
+Lawrence,Mercer,Township
+Fredon Township,Sussex,Township
+Lumberton,Burlington,Township
+Wall,Monmouth,Township
+Dover,Morris,Town
+Galloway,Atlantic,Township
+Fanwood,Union,Borough
+Northvale,Bergen,Borough
+Bernards Township,Somerset,Township
+Scotch Plains,Union,Township
+Elmwood Park,Bergen,Borough
+Andover Township,Sussex,Township
+Haledon,Passaic,Borough
+Woodbine,Cape May,Borough
+Lebanon,Hunterdon,Borough
+North Plainfield,Somerset,Borough
+Barrington,Camden,Borough
+New Providence,Union,Borough
+Hoboken,Hudson,City
+Avon-by-the-Sea,Monmouth,Borough
+Holmdel,Monmouth,Township
+Morristown,Morris,Town
+Somers Point,Atlantic,City
+Wood-Ridge,Bergen,Borough
+Moorestown,Burlington,Township
+Emerson,Bergen,Borough
+Magnolia,Camden,Borough
+Readington,Hunterdon,Township
+City of Orange,Essex,Township
+Runnemede,Camden,Borough
+Sussex,Sussex,Borough
+East Brunswick,Middlesex,Township
+Cape May,Cape May,City
+Ridgewood,Bergen,Village
+Washington Township,Burlington,Township
+Cliffside Park,Bergen,Borough
+Fair Lawn,Bergen,Borough
+Montville,Morris,Township
+Oceanport,Monmouth,Borough
+Green Township,Sussex,Township
+Lakehurst,Ocean,Borough
+Florence,Burlington,Township
+Lakewood,Ocean,Township
+Hope,Warren,Township
+Haddon Township,Camden,Township
+Bradley Beach,Monmouth,Borough
+Stockton,Hunterdon,Borough
+Rockaway Township,Morris,Township
+Delaware Township,Hunterdon,Township
+Lindenwold,Camden,Borough
+Saddle Brook,Bergen,Township
+Alpha,Warren,Borough
+Andover,Sussex,Borough
+Stow Creek Township,Cumberland,Township
+Frelinghuysen Township,Warren,Township
+Manville,Somerset,Borough
+Ocean City,Cape May,City
+Fairview,Bergen,Borough
+Loch Arbour,Monmouth,Village
+West Long Branch,Monmouth,Borough
+Fairfield Township,Cumberland,Township
+Beach Haven,Ocean,Borough
+Belvidere,Warren,Town
+Absecon,Atlantic,City
+Bridgewater,Somerset,Township
+Roselle Park,Union,Borough
+Tavistock,Camden,Borough
+Stillwater,Sussex,Township
+Greenwich Township,Warren,Township
+Glassboro,Gloucester,Borough
+Lower Township,Cape May,Township
+Riverside,Burlington,Township
+Raritan,Somerset,Borough
+Paramus,Bergen,Borough
+Barnegat Light,Ocean,Borough
+Franklin Township,Warren,Township
+Rahway,Union,City
+Commercial Township,Cumberland,Township
+Little Ferry,Bergen,Borough
+Tinton Falls,Monmouth,Borough
+Bernardsville,Somerset,Borough
+Bayonne,Hudson,City
+Woodlynne,Camden,Borough
+Helmetta,Middlesex,Borough
+Oxford Township,Warren,Township
+Allentown,Monmouth,Borough
+Neptune,Monmouth,Township
+Asbury Park,Monmouth,City
+Sparta,Sussex,Township
+Shamong,Burlington,Township
+Washington Township,Morris,Township
+Lawrence Township,Cumberland,Township
+Merchantville,Camden,Borough
+Maywood,Bergen,Borough
+Monroe Township,Gloucester,Township
+West Orange,Essex,Township
+Summit,Union,City
+Boonton Township,Morris,Township
+Sea Isle City,Cape May,City
+Bogota,Bergen,Borough
+Lambertville,Hunterdon,City
+Jackson,Ocean,Township
+Edison,Middlesex,Township
+Bergenfield,Bergen,Borough
+Knowlton Township,Warren,Township
+Harding Township,Morris,Township
+Maurice River,Cumberland,Township
+Harrison,Hudson,Town
+Tewksbury,Hunterdon,Township
+Tuckerton,Ocean,Borough
+Hardwick Township,Warren,Township
+New Milford,Bergen,Borough
+Waldwick,Bergen,Borough
+Kenilworth,Union,Borough
+West Milford,Passaic,Township
+Millville,Cumberland,City
+Westville,Gloucester,Borough
+Deerfield Township,Cumberland,Township
+Old Bridge,Middlesex,Township
+Franklin,Sussex,Borough
+Bordentown,Burlington,City
+Clinton,Hunterdon,Town
+Roselle,Union,Borough
+Jefferson,Morris,Township
+Egg Harbor City,Atlantic,City
+River Vale,Bergen,Township
+Mine Hill,Morris,Township
+Lebanon Township,Hunterdon,Township
+Boonton,Morris,Town
+Belleville,Essex,Township
+Dumont,Bergen,Borough
+East Amwell,Hunterdon,Township
+Bethlehem Township,Hunterdon,Township
+North Arlington,Bergen,Borough
+Longport,Atlantic,Borough
+Morris Plains,Morris,Borough
+South Plainfield,Middlesex,Borough
+Raritan Township,Hunterdon,Township
+Branchville,Sussex,Borough
+Pine Valley,Camden,Borough
+Little Falls,Passaic,Township
+Buena Vista,Atlantic,Township
+Point Pleasant Beach,Ocean,Borough
+Highlands,Monmouth,Borough
+Long Branch,Monmouth,City
+Ocean Township,Ocean,Township
+Wyckoff,Bergen,Township
+Roseland,Essex,Borough
+Norwood,Bergen,Borough
+Essex Fells,Essex,Borough
+Atlantic City,Atlantic,City
+Sayreville,Middlesex,Borough
+West Amwell,Hunterdon,Township
+Penns Grove,Salem,Borough
+Old Tappan,Bergen,Borough
+Voorhees,Camden,Township
+Monroe,Middlesex,Township
+Piscataway,Middlesex,Township
+Verona,Essex,Township
+Lacey,Ocean,Township
+Hamilton Township,Atlantic,Township
+Collingswood,Camden,Borough
+Westfield,Union,Town
+Springfield,Union,Township
+Beachwood,Ocean,Borough
+Closter,Bergen,Borough
+Estell Manor,Atlantic,City
+Spring Lake Heights,Monmouth,Borough
+Vernon,Sussex,Township
+Shiloh,Cumberland,Borough
+Weehawken,Hudson,Township
+Carteret,Middlesex,Borough
+Montague,Sussex,Township
+Mansfield Township,Warren,Township
+Ramsey,Bergen,Borough
+Secaucus,Hudson,Town
+Hamburg,Sussex,Borough
+Hanover,Morris,Township
+Millburn,Essex,Township
+Mullica Township,Atlantic,Township
+Northfield,Atlantic,City
+Clifton,Passaic,City
+Union Beach,Monmouth,Borough
+Audubon Park,Camden,Borough
+Gibbsboro,Camden,Borough
+Hackensack,Bergen,City
+Mendham Township,Morris,Township
+Howell,Monmouth,Township
+Lawnside,Camden,Borough
+Toms River,Ocean,Township
+Seaside Heights,Ocean,Borough
+Midland Park,Bergen,Borough
+Pitman,Gloucester,Borough
+Walpack Township,Sussex,Township
+Garwood,Union,Borough
+Manasquan,Monmouth,Borough
+Folsom,Atlantic,Borough
+Woodbury,Gloucester,City
+Netcong,Morris,Borough
+Lake Como,Monmouth,Borough
+Wildwood Crest,Cape May,Borough
+South Bound Brook,Somerset,Borough
+Farmingdale,Monmouth,Borough
+West Caldwell,Essex,Township
+Mount Arlington,Morris,Borough
+Cherry Hill,Camden,Township
+Bellmawr,Camden,Borough
+Milltown,Middlesex,Borough
+Chester Township,Morris,Township
+South Brunswick,Middlesex,Township
+Keyport,Monmouth,Borough
+Bloomsbury,Hunterdon,Borough
+Linwood,Atlantic,City
+Maplewood,Essex,Township
+Cedar Grove,Essex,Township
+Franklin Township,Hunterdon,Township
+Millstone,Somerset,Borough
+Holland Township,Hunterdon,Township
+New Hanover,Burlington,Township
+Middlesex,Middlesex,Borough
+Weymouth Township,Atlantic,Township
+Elk,Gloucester,Township
+Atlantic Highlands,Monmouth,Borough
+Franklin Township,Gloucester,Township
+Washington Township,Warren,Township
+Wantage,Sussex,Township
+Lodi,Bergen,Borough
+North Haledon,Passaic,Borough
+Berkeley,Ocean,Township
+Waterford,Camden,Township
+Middletown,Monmouth,Township
+Mount Olive,Morris,Township
+Prospect Park,Passaic,Borough
+West Deptford,Gloucester,Township
+West Cape May,Cape May,Borough
+Hopatcong,Sussex,Borough
+Lopatcong,Warren,Township
+Ridgefield Park,Bergen,Village
+North Bergen,Hudson,Township
+Upper Freehold,Monmouth,Township
+Middle Township,Cape May,Township
+Margate City,Atlantic,City
+Stafford Township,Ocean,Township
+Greenwich Township,Gloucester,Township
+Bass River Township,Burlington,Township
+Laurel Springs,Camden,Borough
+Logan Township,Gloucester,Township
+Kearny,Hudson,Town
+Downe Township,Cumberland,Township
+Ridgefield,Bergen,Borough
+Pemberton Township,Burlington,Township
+Berlin,Camden,Borough
