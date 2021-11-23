@@ -14,18 +14,19 @@ public class PassengerFlight
 			String text;
 			while ((text=input.readLine()) != null)
 			{
-				q.add(new Passenger(text.split(" ")[1], text.split(" ")[0], input.readLine(), input.readLine()));
-				pq.add(new Passenger(text.split(" ")[1], text.split(" ")[0], input.readLine(), input.readLine()));
+				String city = input.readLine(), time = input.readLine();
+				q.add(new Passenger(text.split(" ")[1], text.split(" ")[0], city, time));
+				pq.add(new Passenger(text.split(" ")[1], text.split(" ")[0], city, time));
 			}
 		} catch (IOException io) {
 			System.err.println("File does not exist");
 		}
 
+		System.out.println("Queue");
 		while (!(q.isEmpty()))
 			System.out.println(q.poll());
 
-		System.out.println("\n\n\n");
-
+		System.out.println("\n\n\nPriority Queue");
 		while (!(pq.isEmpty()))
 			System.out.println(pq.poll());
 	}
@@ -68,25 +69,18 @@ class Passenger implements Comparable<Passenger>
 		} else return (Integer.parseInt(militaryTime.split(":")[0])-9) + " hrs & " + (Integer.parseInt(militaryTime.split(":")[1])-3) + " mins";
 	}
 
-	@Override
+	//@Override
 	public int compareTo(Passenger other)
 	{
-		/*if (getTimeValue()<other.getTimeValue())
-			return -1;
-		else if (getTimeValue()>other.getTimeValue())
-			return 1;
-		else return 0;*/
-
-		int comparison = this.compareNum.compareTo(other.compareNum);
-		if (comparison != 0)
-			return comparison;
-
-		return this.lastName.compareTo(other.lastName);
+		return compareNum.compareTo(other.compareNum);
 	}
 
 	public Integer getTimeValue()
 	{
-		return Integer.parseInt(etdCalc().substring(0, etdCalc().indexOf(" ")) + etdCalc().substring(etdCalc().indexOf("&")+2, etdCalc().lastIndexOf(" ")));
+		Integer tv = Integer.parseInt(etdCalc().substring(0, etdCalc().indexOf(" ")) + etdCalc().substring(etdCalc().indexOf("&")+2, etdCalc().lastIndexOf(" ")));
+		if (tv < 100)
+			return tv;
+		else return 999;
 	}
 
 	public String toString()
