@@ -35,9 +35,7 @@ public class Runner
 			if (slArr.get(r)==null)
 			{
 				slArr.remove(r);
-				if (r != oldSize-1)
-					slArr.add(r, slQueue.poll());
-				else slArr.add(slQueue.poll());
+				slArr.add(r, slQueue.poll());
 			}
 		}
 		System.out.println(slArr);

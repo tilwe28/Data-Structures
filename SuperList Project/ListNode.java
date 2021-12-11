@@ -34,4 +34,17 @@ public class ListNode<E>
 	{
 		return (prev != null);
 	}//hasPrev
+
+	public String toString()
+	{
+		String prevValue = "", nextValue = "";
+		if (prev == null)
+			prevValue = "root has no prev";
+		else prevValue = prev.getValue() + "";
+		if (next == null)
+			nextValue = "end has no next";
+		else nextValue = next.getValue() + "";
+
+		return "Prev: " + prevValue + "\nNext: " + nextValue + "\nValue: " + value;
+	}
 }//ListNode<E>

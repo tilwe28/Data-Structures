@@ -24,33 +24,38 @@ public class SuperList<E>
 		else {
 			ListNode<E> temp = end;
 			temp.setNext(ln);
+			ln.setPrev(temp);
 			end = ln;
-			end.setPrev(temp);
 		}
 		size++;
 	}//add to end
 	public void add(int n, E value)
 	{
-		if (n>=size || n<0)
+		if (n>size || n<0)
 			throw new ArrayIndexOutOfBoundsException();
 
-		size++;
 		ListNode<E> lnNew = new ListNode<E>(value);
 		ListNode<E> current = root;
 
+		size++;
 		for (int i=0; i<n; i++)
 			current = current.getNext();
-		if (n!=size-1)
-			lnNew.setPrev(current.getPrev());
-		else {
-			lnNew.setPrev(end);
+		if (n == 0)
+		{
+			current.setPrev(lnNew);
+			lnNew.setNext(current);
+			root = lnNew;
+		} else if (n == size-1) {
+			current = end;
+			current.setNext(lnNew);
+			lnNew.setPrev(current);
 			end = lnNew;
+		} else {
+			current.getPrev().setNext(lnNew);
+			lnNew.setPrev(current.getPrev());
+			lnNew.setNext(current);
+			current.setPrev(lnNew);
 		}
-		lnNew.setNext(current);
-		current.setPrev(lnNew);
-		if (n!=0)
-			lnNew.getPrev().setNext(lnNew);
-		else root = lnNew;
 	}//add at index
 
 	public void push(E value)
