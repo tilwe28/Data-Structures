@@ -1,4 +1,5 @@
 //Anurag Tilwe
+import java.util.*;
 public class SuperList<E>
 {
 	private ListNode<E> root, end;
@@ -33,7 +34,6 @@ public class SuperList<E>
 	{
 		if (n>size || n<0)
 			throw new ArrayIndexOutOfBoundsException();
-
 		ListNode<E> lnNew = new ListNode<E>(value);
 		ListNode<E> current = root;
 
@@ -65,23 +65,40 @@ public class SuperList<E>
 
 	public E pop()
 	{
+		if (end == null)
+			throw new EmptyStackException();
 		E value = end.getValue();
 		end = end.getPrev();
 		if (size>1) end.setNext(null);
 		size--;
+		if (size == 0)	root = end;
 		return value;
 	}//pop
 	public E poll()
 	{
+		if (root == null)
+			return null;
+
 		E value = root.getValue();
 		root = root.getNext();
 		if (size>1) root.setPrev(null);
 		size--;
+		if (size == 0)	end = root;
 		return value;
 	}//poll
 
-	public E stackPeek() { return end.getValue(); }//stackPeek
-	public E queuePeek() { return root.getValue(); }//queuePeek
+	public E stackPeek()
+	{
+		if (end == null)
+			return null;
+		else return end.getValue();
+	}//stackPeek
+	public E queuePeek()
+	{
+		if (root == null)
+			return null;
+		else return root.getValue();
+	}//queuePeek
 
 	public E get(int n)
 	{
@@ -130,10 +147,10 @@ public class SuperList<E>
 
 	public void clear()
 	{
-		root = null;
 		root.setNext(null);
-		end = null;
+		root = null;
 		end.setPrev(null);
+		end = null;
 		size = 0;
 	}//clear
 

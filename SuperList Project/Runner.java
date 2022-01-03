@@ -101,6 +101,7 @@ public class Runner
 		//Searching for median
 		System.out.println("\n\nMedian search");
 		int l=0, r=slArr.size()-1;
+		SuperList<Integer> slMedian = new SuperList<Integer>();
 		System.out.println("Size: " + slArr.size());
 		if (slArr.size()%2==1)
 		{
@@ -118,25 +119,32 @@ public class Runner
 				if (slArr.get(mid)<median)
 					r=mid-1;
 			}
+			for (int i=0; i<slArr.size()/2; i++)
+				slMedian.add(slArr.get(i));
+			System.out.println("Values before median: " + slMedian);
+			slMedian.clear();
+			for (int i=slArr.size()/2+1; i<slArr.size(); i++)
+				slMedian.add(slArr.get(i));
+			System.out.println("Values after median: " + slMedian);
 		}
 		else {
 			double median = ((double)(double)slArr.get(slArr.size()/2)+(double)slArr.get(slArr.size()/2-1))/2;
 			System.out.println("Median: " + median);
-			int sum1=0, sum2=0;
 			for (int i=0; i<slArr.size()/2; i++)
-				sum1 += slArr.get(i);
+				slMedian.add(slArr.get(i));
+			System.out.println("Values before median: " + slMedian);
+			slMedian.clear();
 			for (int i=slArr.size()/2; i<slArr.size(); i++)
-				sum2 += slArr.get(i);
-			System.out.println("Sum before \"median\": " + sum1);
-			System.out.println("Sum after \"median\": " + sum2);
+				slMedian.add(slArr.get(i));
+		System.out.println("Values after median: " + slMedian);
 		}
 
 		//SuperList of String
 		System.out.println("\n\nSuperList of String");
 		SuperList<String> slString = new SuperList<String>();
-		String sentence = "Hello my name is Gaurav and I learned how to find the jacobian of transformations today.";
+		String sentence = "Hello, my name is Gaurav and I learned how to find the \"jacobian\" of transformations today.";
 		for (int i=0; i<sentence.split(" ").length; i++)
-			slString.add(sentence.split(" ")[i]);
+			slString.add(sentence.split("[^a-zA-Z]+")[i]);
 		System.out.println(slString);
 
 		//Removing words that are have 3 or less characters
@@ -152,7 +160,7 @@ public class Runner
 		//Sorting in ascending order
 		System.out.println("\n\nSorted in ascending order");
 		slString = insertionSort(slString);
-		System.out.println(slString);
+		System.out.println(insertionSort(slString));
 
 		System.out.println("\n");
 
@@ -169,7 +177,7 @@ public class Runner
 		{
 			String current = sl.get(i);
 			int j = i-1;
-			while (j>=0 && (sl.get(j).compareTo(current))==1)
+			while (j>=0 && (sl.get(j).compareTo(current))>0)
 			{
 				sl.set(j+1, sl.get(j));
 				j--;
