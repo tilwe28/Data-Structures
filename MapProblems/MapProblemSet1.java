@@ -60,7 +60,15 @@ public class MapProblemSet1
 			System.err.println("File does not exist");
 		}
 		for (Map.Entry<Integer, PriorityQueue<Bowler>> entry : bowlers.entrySet())
-			System.out.println(entry.getKey() + "=" + entry.getValue());
+		{
+			System.out.print(entry.getKey() + "= [");
+			while (!entry.getValue().isEmpty())
+			{
+				if (entry.getValue().size() != 1)
+					System.out.print(entry.getValue().poll() + ", ");
+				else System.out.println(entry.getValue().poll() + "]");
+			}
+		}
 	}
 }
 
