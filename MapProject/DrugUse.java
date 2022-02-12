@@ -63,6 +63,15 @@ public class DrugUse
 	public double getMethFreq() { return meth_freq; }
 	public double getSedativeFreq() { return sedative_freq; }
 
+	public double overallDrugUseFreq()
+	{
+		//Use of harder drugs like crack and cocaine are give more priority and will be counted more
+		//Use of alcohol and marijuana will be counted less because they have less effects
+		double overallUse = (alcohol_use*0.5) + (marijuana_use*0.9) + (cocaine_use*2) + (crack_use*2) + (heroin_use*2) + (hallucinogen_use*2) + (inhalant_use*3) + (painRelief_use*1.5) + (oxycontin_use*1.5) + (tranquilizer_use*2.5) + (stimulant_use*2.5) + (meth_use*2);
+		double overallFreq = (alcohol_freq*0.1) + (marijuana_freq*0.25) + (cocaine_freq) + (crack_freq) + (heroin_freq) + (hallucinogen_freq) + (inhalant_freq*1.25) + (painRelief_freq*0.75) + (oxycontin_freq*0.75) + (tranquilizer_freq*1.25) + (stimulant_freq*1.25) + (meth_freq);
+		return (overallUse*overallFreq)/25;
+	}
+
 	public String toString()
 	{
 		return "Alcohol: "+alcohol_use+"% and "+alcohol_freq
@@ -78,6 +87,6 @@ public class DrugUse
 		+" times per year\nStimulant: "+stimulant_use+"% and "+stimulant_freq
 		+" times per year\nMeth: "+meth_use+"% and "+meth_freq
 		+" times per year\nSedative: "+sedative_use+"% and "+sedative_freq
-		+"times per year";
+		+"times per year\nOVERALL: "+overallDrugUseFreq();
 	}
 }
