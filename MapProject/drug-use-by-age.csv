@@ -1,0 +1,6 @@
+age,alcohol-use,alcohol-frequency,marijuana-use,marijuana-frequency,cocaine-use,cocaine-frequency,crack-use,crack-frequency,heroin-use,heroin-frequency,hallucinogen-use,hallucinogen-frequency,inhalant-use,inhalant-frequency,pain-releiver-use,pain-releiver-frequency,oxycontin-use,oxycontin-frequency,tranquilizer-use,tranquilizer-frequency,stimulant-use,stimulant-frequency,meth-use,meth-frequency,sedative-use,sedative-frequency
+12-16,19.9,6,10,19.6,0.4,4.5,0,2.7,0.1,21,1.6,13.6,2.4,8.9,4,15.8,0.5,15.4,1.2,19.6,0.9,6.7,0.2,18.9,0.2,16.3
+17-21,65.1,34.6,32.4,52,3.8,5.7,0.4,11,0.5,73,6.8,3.2,1.6,3.4,9.2,11.6,1.5,9.2,4.4,8.1,3.4,9,0.6,35.8,0.4,7.1
+22-30,82.7,52,24.7,54.7,3.9,5.3,0.5,5.7,0.8,65.2,4.3,2.7,0.8,3.3,9.1,14.3,1.4,17,4.3,10.7,2.8,9,0.6,32.3,0.3,24.5
+31-64,73.2,52,11.4,57.3,1.5,19.7,0.5,41.7,0.2,129,0.9,16.3,0.3,9,4.2,15.3,0.5,21,2.3,8,0.8,20,0.3,62.7,0.3,41.3
+65+,49.3,52,1.2,36,0,0,0,0,0,120,0.1,2,0,0,0.6,24,0,0,0.2,5,0,364,0,0,0,15
