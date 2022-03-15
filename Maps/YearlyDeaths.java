@@ -48,5 +48,20 @@ public class YearlyDeaths
 		return (deaths2009+deaths2010+deaths2011+deaths2012+deaths2013+deaths2014+deaths2015+deaths2016+deaths2017+deaths2018+deaths2019)/11;
 	}
 
+	public String getAllDeaths()
+	{
+		return "2009: "+deaths2009
+		+"\n2010: "+deaths2010
+		+"\n2011: "+deaths2011
+		+"\n2012: "+deaths2012
+		+"\n2013: "+deaths2013
+		+"\n2014: "+deaths2014
+		+"\n2015: "+deaths2015
+		+"\n2016: "+deaths2016
+		+"\n2017: "+deaths2017
+		+"\n2018: "+deaths2018
+		+"\n2019: "+deaths2019;
+	}
+
 	public String toString() { return getAverageDeaths()+" average deaths"; }
 }
