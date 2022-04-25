@@ -24,6 +24,12 @@ public class Sierpinski extends JPanel implements KeyListener
 		frame.addKeyListener(this);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
+
+		initializeTriangle();
+
+		Color c = Color.WHITE;
+		for (int i = 3; i < 100; i++)
+			addPoint(points.get(i), c);
 	}
 
 	public void paintComponent(Graphics g)
@@ -34,13 +40,21 @@ public class Sierpinski extends JPanel implements KeyListener
 		g.setColor(Color.BLACK);
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-		// Print all points here
-		g.setColor(Color.WHITE);
+		for (Point p : points)
+		{
+			g.setColor(p.c);
+			g.fillOval(p.x, p.y, 2, 2);
+		}
+	}
+
+	public void initializeTriangle()
+	{
+		Color c = Color.WHITE;
 
 		// 3 corners of triangle
-		points.add(new Point(100, frame.getHeight()-100, g.getColor())); // Bottom left
-		points.add(new Point(frame.getWidth()/2, 100, g.getColor())); // Top
-		points.add(new Point(frame.getWidth()-100, frame.getHeight()-100, g.getColor())); // Bottom right
+		points.add(new Point(100, frame.getHeight()-100, c)); // Bottom left
+		points.add(new Point(frame.getWidth()/2, 100, c)); // Top
+		points.add(new Point(frame.getWidth()-100, frame.getHeight()-100, c)); // Bottom right
 
 		// Setting triangle polygon
 		int[] xValues = new int[points.size()], yValues = new int[points.size()];
@@ -52,24 +66,13 @@ public class Sierpinski extends JPanel implements KeyListener
 		triangle = new Polygon(xValues, yValues, 3);
 
 		// Adding random start point
-		g.setColor(Color.GREEN);
+		c = Color.GREEN;
 		int randX, randY;
 		do {
 			randX = (int)(Math.random()*((frame.getWidth()-100-100)+1))+100;
 			randY = (int)(Math.random()*((100-(frame.getHeight()-100))+1))+(frame.getHeight()-100);
 		} while (!triangle.contains(randX, randY));
-		points.add(new Point(randX, randY, g.getColor()));
-		g.setColor(Color.WHITE);
-
-
-		for (int i = 3; i < 100000; i++)
-			addPoint(points.get(i), g.getColor());
-
-		for (Point p : points)
-		{
-			g.setColor(p.c);
-			g.fillOval(p.x, p.y, 2, 2);
-		}
+		points.add(new Point(randX, randY, c));
 	}
 
 	public void addPoint(Point lastP, Color c)
@@ -83,7 +86,8 @@ public class Sierpinski extends JPanel implements KeyListener
 	{
 		// get a key to add 5 points at a time & speed process
 		System.out.println(e.getKeyCode());
-		addPoint(points.get(points.size()-1), Color.BLUE);
+		for (int i=0; i<5; i++)
+			addPoint(points.get(points.size()-1), Color.CYAN);
 		repaint();
 	}
 	public void keyReleased(KeyEvent e) {}
