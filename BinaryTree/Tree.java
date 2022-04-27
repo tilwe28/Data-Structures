@@ -20,6 +20,7 @@ public class Tree<E extends Comparable<E>>
 		tree.remove("P");
 		ArrayList<String> letters = tree.toArrayList();
     	System.out.println("After Removing P --> "+letters);
+		tree.print();
 	}//main
 
 	class TreeNode<E>
@@ -175,7 +176,6 @@ public class Tree<E extends Comparable<E>>
 		}
 	}
 
-
 	//contains
 	public boolean contains(E value)
 	{
@@ -262,5 +262,58 @@ public class Tree<E extends Comparable<E>>
 
 		return node;
 	}
+
+	//rotate
+	public void rotateRight()
+	{
+		TreeNode<E> temp = root.getLeft();
+		root.setLeft(temp.getRight());
+		temp.setRight(root);
+		root = temp;
+	}
+
+	public void rotateLeft()
+	{
+		TreeNode<E> temp = root.getRight();
+		root.setRight(temp.getLeft());
+		temp.setLeft(root);
+		root = temp;
+	}
+
+	//print
+	public void print()
+	{
+		if (root == null)
+			System.out.print("Empty Tree");
+		print(root,0,"");
+		System.out.println();
+	}
+	
+	private void print(TreeNode<E> curr, int depth, String s)
+	{
+		if (curr == null)
+			return; 
+		
+		for (int i=1; i<=depth-1; i++)
+		{
+			//if (i>1)
+			//  System.out.print("│");  
+			System.out.print("|\t");
+		}
+
+		if (depth == 0)
+			System.out.println("["+curr.value+"] <- root (L___ left, R___ right)");
+	
+
+		if (depth > 0)
+		{
+			System.out.print(s);
+			System.out.println(curr.value); 
+		}
+		
+		print(curr.left, depth + 1,"L___"); // indicates left or "less than" side
+		print(curr.right,depth + 1,"R___");  // indicate right or "greater than" side		
+	}
+	
 
 }//Tree class
