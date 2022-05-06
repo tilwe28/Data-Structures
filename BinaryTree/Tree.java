@@ -5,22 +5,34 @@ public class Tree<E extends Comparable<E>>
 
 	public static void main(String[] args)
 	{
-		Tree<String> tree = new Tree<>("P");
-		tree.add("F");
-		tree.add("H");
-		tree.add("Y");
-		tree.add("H");
-		tree.add("Q");
-		tree.traverseInOrder();
-		System.out.println("Size = "+tree.size());
-		System.out.println("Min = "+tree.minValue());
-		System.out.println("Max = "+tree.maxValue());
-		System.out.println("contains(\"Q\") = "+tree.contains("Q"));
-		System.out.println("contains(\"Z\") = "+tree.contains("Z"));
-		tree.remove("P");
-		ArrayList<String> letters = tree.toArrayList();
-    	System.out.println("After Removing P --> "+letters);
+		// Tree<String> tree = new Tree<>("P");
+		// tree.add("F");
+		// tree.add("H");
+		// tree.add("Y");
+		// tree.add("H");
+		// tree.add("Q");
+		// tree.traverseInOrder();
+		// System.out.println("Size = "+tree.size());
+		// System.out.println("Min = "+tree.minValue());
+		// System.out.println("Max = "+tree.maxValue());
+		// System.out.println("contains(\"Q\") = "+tree.contains("Q"));
+		// System.out.println("contains(\"Z\") = "+tree.contains("Z"));
+		// tree.remove("P");
+		// ArrayList<String> letters = tree.toArrayList();
+    	// System.out.println("After Removing P --> "+letters);
+		// tree.print();
+
+		Tree<Integer> tree = new Tree<>(5);
+		tree.add(3);
+		tree.add(7);
+		tree.add(6);
+		tree.add(2);
 		tree.print();
+		tree.traversePreOrder();
+		tree.traversePostOrder();
+		tree.traverseInOrder();
+		System.out.println(tree.NodeCount());
+
 	}//main
 
 	class TreeNode<E>
@@ -313,6 +325,19 @@ public class Tree<E extends Comparable<E>>
 		
 		print(curr.left, depth + 1,"L___"); // indicates left or "less than" side
 		print(curr.right,depth + 1,"R___");  // indicate right or "greater than" side		
+	}
+
+	//NodeCount
+	public int NodeCount()
+	{
+		return NodeCount(root);
+	}
+
+	private int NodeCount(TreeNode<E> node)
+	{
+		if (node == null)
+			return 0;
+		return NodeCount(node.left) + NodeCount(node.right) + 1;
 	}
 	
 
