@@ -44,6 +44,41 @@ public class Runner {
 
         for (Edge edge : graph.getEdges())
             System.out.println("\t" + edge);
+
+        for (Artist startingArtist : graph.getArtists()) {
+            System.out.println("\t" + startingArtist);
+            for (Artist endArtist : graph.getArtists())
+                if (!startingArtist.equals(endArtist)) {
+                    currentPath = new Stack<>();
+                    visited = new HashSet<>();
+                    dft(startingArtist, endArtist);
+                }
+        }
+    }
+
+    public void dft(Artist currenArtist, Artist destination) {
+        currentPath.push(currenArtist);
+        visited.add(currenArtist);
+        if (currenArtist.equals(destination))
+            printCurrentPath();
+        else
+            for (Edge edge : graph.getEdges()) {
+                Artist artist = edge.getArtist(), similar = edge.getSimilar();
+                if (visited.contains(artist) && !visited.contains(similar))
+                    dft(similar, destination);
+                if (!visited.contains(artist) && visited.contains(similar))
+                    dft(artist, destination);
+            }
+    }
+
+    public void printCurrentPath() {
+        String output = "";
+        while (!currentPath.isEmpty()) {
+            output = currentPath.pop() + output;
+            if (!currentPath.isEmpty())
+                output = " -> " + output;
+        }
+        System.out.println("\t" + output);
     }
 
     public static void main(String[] args) {
