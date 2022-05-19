@@ -46,7 +46,7 @@ public class Runner {
             System.out.println("\t" + edge);
 
         for (Artist startingArtist : graph.getArtists()) {
-            System.out.println("\t" + startingArtist);
+            System.out.println(startingArtist);
             for (Artist endArtist : graph.getArtists())
                 if (!startingArtist.equals(endArtist)) {
                     currentPath = new Stack<>();
