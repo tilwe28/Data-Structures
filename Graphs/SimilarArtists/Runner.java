@@ -1,5 +1,6 @@
 import java.util.*;
 import java.io.*;
+
 public class Runner {
     
     private HashMap<Artist, HashSet<Edge>> artistMap;
