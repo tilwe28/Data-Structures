@@ -10,6 +10,7 @@ public class Artist {
 
     public String getName() { return name; }
     public int getUniqueID() { return uniqueID; }
+    public int hashCode() { return uniqueID; }
     public String toString() { return name; }
 
     public boolean equals(Object obj) {
@@ -17,7 +18,7 @@ public class Artist {
             return false;
 
         Artist other = (Artist)obj;
-        return this.getUniqueID() == other.getUniqueID();
+        return this.hashCode() == other.hashCode();
     }
 
 }

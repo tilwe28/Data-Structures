@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class Runner {
-    
+
     private HashMap<Artist, HashSet<Edge>> artistMap;
     private Artist start, end;
     private Graph graph;
@@ -19,7 +19,7 @@ public class Runner {
             BufferedReader input = new BufferedReader(new FileReader(file));
             String text = "";
 
-            while ((text=input.readLine()) != null) {
+            while ((text = input.readLine()) != null) {
                 String[] info = text.split(", ");
                 Artist a1 = new Artist(info[0]);
                 Artist a2 = new Artist(info[1]);
@@ -32,10 +32,12 @@ public class Runner {
                     artistMap.put(a1, new HashSet<Edge>());
                 if (!artistMap.containsKey(a2))
                     artistMap.put(a2, new HashSet<Edge>());
-                
+
                 artistMap.get(a1).add(new Edge(a1, a2));
                 artistMap.get(a2).add(new Edge(a2, a1));
             }
+
+            input.close();
 
         } catch (IOException io) {
             System.err.println("File does not exist.");
@@ -57,18 +59,23 @@ public class Runner {
         }
     }
 
-    public void dft(Artist currenArtist, Artist destination) {
-        currentPath.push(currenArtist);
-        visited.add(currenArtist);
-        if (currenArtist.equals(destination))
+    public void dft(Artist currentArtist, Artist destination) {
+        currentPath.push(currentArtist);
+        visited.add(currentArtist);
+        if (currentArtist.equals(destination))
             printCurrentPath();
         else
             for (Edge edge : graph.getEdges()) {
                 Artist artist = edge.getArtist(), similar = edge.getSimilar();
-                if (visited.contains(artist) && !visited.contains(similar))
+                // if (visited.contains(artist) && !visited.contains(similar))
+                //     dft(similar, destination);
+                // if (!visited.contains(artist) && visited.contains(similar))
+                //     dft(artist, destination);
+                if (artist.equals(currentArtist) && !visited.contains(similar)) {
                     dft(similar, destination);
-                if (!visited.contains(artist) && visited.contains(similar))
-                    dft(artist, destination);
+                    if (!currentPath.isEmpty()) 
+                        currentPath.pop();
+                }
             }
     }
 

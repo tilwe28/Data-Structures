@@ -12,17 +12,18 @@ public class Edge {
     public Artist getArtist() { return artist; }
     public Artist getSimilar() { return similar; }
     public int getUniqueID() { return uniqueID; }
+    public int hashCode() { return uniqueID; }
 
     public String toString() {
         return artist + " is similar to " + similar;
     }
 
     public boolean equals(Object obj) {
-        if (obj == null || this.getClass() == obj.getClass())
+        if (obj == null || this.getClass() != obj.getClass())
             return false;
         
         Edge other = (Edge)obj;
-        return this.getUniqueID() == other.getUniqueID();
+        return this.hashCode() == other.hashCode();
     }
 
 }
