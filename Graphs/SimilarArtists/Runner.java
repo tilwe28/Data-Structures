@@ -49,15 +49,18 @@ public class Runner {
         for (Edge edge : graph.getEdges())
             System.out.println("\t" + edge);
 
-        for (Artist startingArtist : graph.getArtists()) {
-            System.out.println(startingArtist);
-            for (Artist endArtist : graph.getArtists())
-                if (!startingArtist.equals(endArtist)) {
-                    currentPath = new Stack<>();
-                    visited = new HashSet<>();
-                    dft(startingArtist, endArtist);
-                }
-        }
+        // for (Artist startingArtist : graph.getArtists()) {
+        //     System.out.println(startingArtist);
+        //     for (Artist endArtist : graph.getArtists())
+        //         if (!startingArtist.equals(endArtist)) {
+        //             currentPath = new Stack<>();
+        //             visited = new HashSet<>();
+        //             dft(startingArtist, endArtist);
+        //         }
+        // }
+
+        currentPath = new Stack<>();
+        visited = new HashSet<>();
     }
 
     public void dft(Artist currentArtist, Artist destination) {
@@ -120,7 +123,20 @@ public class Runner {
     }
 
     public static void main(String[] args) {
-        new Runner();
+        Runner sat = new Runner();
+
+        System.out.println("\n\nDFT: Benee to LoveLeo");
+        sat.dft(new Artist("Benee"), new Artist("LoveLeo"));
+
+        System.out.println("BFT: Benee to LoveLeo"); 
+        sat.bft(new Artist("Benee"), new Artist("LoveLeo"));
+
+        // No Connection
+        System.out.println("\n___ NO CONNECTION____"); 
+        System.out.println("DFT: FastBall to T.J."); 
+        sat.dft(new Artist("FastBall"), new Artist("T.J."));
+        System.out.println("BFT: FastBall to T.J."); 
+        sat.bft(new Artist("FastBall"), new Artist("T.J."));
     }
 
 }
