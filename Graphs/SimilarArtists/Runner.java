@@ -1,4 +1,5 @@
 import java.util.*;
+import java.beans.DesignMode;
 import java.io.*;
 
 public class Runner {
@@ -67,16 +68,45 @@ public class Runner {
         else
             for (Edge edge : graph.getEdges()) {
                 Artist artist = edge.getArtist(), similar = edge.getSimilar();
-                // if (visited.contains(artist) && !visited.contains(similar))
-                //     dft(similar, destination);
-                // if (!visited.contains(artist) && visited.contains(similar))
-                //     dft(artist, destination);
-                if (artist.equals(currentArtist) && !visited.contains(similar)) {
+                if (visited.contains(artist) && !visited.contains(similar))
                     dft(similar, destination);
-                    if (!currentPath.isEmpty()) 
-                        currentPath.pop();
+                if (!visited.contains(artist) && visited.contains(similar))
+                    dft(artist, destination);
+            }
+
+        currentPath = new Stack<>();
+        visited = new HashSet<>();
+    }
+
+    public void bft(Artist currentArtist, Artist destination) {
+        Queue<Artist> q = new LinkedList<>();
+        Map<Artist, Artist> prev = new HashMap<>();
+        visited.clear();
+
+        q.add(currentArtist);
+        Artist a = currentArtist;
+        while (!q.isEmpty() && !(a=q.poll()).equals(destination)) {
+            for (Edge e : graph.getEdges()) {
+                if (e.getArtist().equals(a) && !visited.contains(e.getSimilar())) {
+                    q.add(e.getSimilar());
+                    prev.put(e.getSimilar(), a);
                 }
             }
+
+            visited.add(a);
+        }
+
+        if (!a.equals(destination)) {
+            System.out.println("No connection found");
+            return;
+        }
+
+        String output = a.toString();
+        while (prev.get(a) != null && !prev.get(a).equals(currentArtist)) {
+            a = prev.get(a);
+            output = a + " -> " + output;
+        }
+        System.out.println(currentArtist + " -> " + output);
     }
 
     public void printCurrentPath() {
