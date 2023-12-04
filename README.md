@@ -1,1 +1,1 @@
-All projects and tasks done in Data Structures class
+All projects and tasks done in High School Data Structures class
